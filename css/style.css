@@ -1,7 +1,7 @@
 /*==================
     Google Fonts
 ==================*/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*================
     Global css
@@ -245,7 +245,7 @@ header .container .logo{
     Client section start
 ==========================*/
 .client-section{
-    padding: 50px 0;
+    padding: 50px 0 100px;
 }
 .client-section .container{
     max-width: 1140px;
@@ -350,10 +350,110 @@ header .container .logo{
 }
 
 /*=========================
+     Self section start
+==========================*/
+.self-section{
+    padding: 100px 0;
+    background-color: #3734A9;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.self-section .container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 90px; 
+}
+.self-info{
+    width: 60%;
+}
+.self-details{ 
+    width: 500px;
+}
+.self-details h4{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    margin-bottom: 16px;
+}
+.self-details h1{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px; 
+    letter-spacing: -0.03em;
+    color: #FFFFFF; 
+    margin-bottom: 40px;
+}
+.self-details p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px; 
+    letter-spacing: -0.02em; 
+    color: #FFF;
+}
+.form-section{
+    width: 40%;
+}
+.form-section input[type="Email"]{
+    display: block;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: rgb(90,90,184);
+    caret-color: #BBB5E0;
+    border-radius: 5px;
+    height: 52px;
+    padding-left: 22px;
+    margin-bottom: 20px;
+}
+.form-section input[type="password"]{
+    display: block;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: rgb(90,90,184);
+    border-radius: 5px;
+    height: 52px;
+    caret-color: #BBB5E0;
+    padding-left: 22px;
+    margin-bottom: 20px; 
+}
+input[type="Email"]::placeholder,
+input[type="password"]::placeholder{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #BBB5E0;
+    opacity: 0.4;
+}
+
+.form-section .btn-submit {
+    width: 90%;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #FF7F5C;
+    border-radius: 5px;
+    padding: 12px 0;
+}
+
+/*=========================
     Footer section start
 ==========================*/
 footer{
-   padding: 70px 0 140px;
+    padding: 20px 0 70px;
 }
 footer .container{
     max-width: 1140px;
@@ -374,9 +474,6 @@ footer .container p{
 @media (min-width: 320px) and (max-width: 576px){
 
 /* header section start */
-header{
-
-}
 header .container {
     flex-direction: column;
 }
@@ -535,6 +632,54 @@ ul {
 .client-info .working-info p {
     font-size: 19px;
 }
+
+/* self section start */
+.self-section {
+    padding: 70px 15px;
+}
+.self-section .container {
+    flex-direction: column;
+    gap: 45px;
+}
+.self-info {
+    width: 100%;
+}
+.self-details {
+    width: 100%;
+}
+.self-details h4 {
+    letter-spacing: 1px;
+}
+.self-details h1 {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    margin-bottom: 18px;
+}
+.self-details p {
+    font-size: 16px;
+    line-height: 28px;
+}
+.form-section {
+    width: 100%;
+}
+.form-section input[type="Email"],
+.form-section input[type="password"]{
+    width: 100%; 
+    margin-bottom: 18px;
+}
+.form-section .btn-submit {
+    width: 100%;
+}
+  
+
+
+
+
+
+
+
+
 
 /* Logo section start */
 .logo-section{
