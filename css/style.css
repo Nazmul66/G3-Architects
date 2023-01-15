@@ -49,7 +49,7 @@ header .container .logo{
    display: inline-block;
    margin-right: 40px;
 }
-.menu ul li:nth-child(4){
+.menu ul li:nth-child(5){
     margin-right: 0px;
 }
 .menu ul li a{
@@ -156,6 +156,89 @@ header .container .logo{
     border-radius: 8px;
     font-weight: 600;
     font-size: 18px; 
+}
+
+/*=========================
+   service section start
+==========================*/
+.service-section{
+     padding: 100px 0;
+}
+.service-section .container{
+     max-width: 1140px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     gap: 100px;
+}
+.service-details{
+    width: 48%;
+}
+.service-details h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--black);
+    border-left: 4px solid var(--orange-light);
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.service-details p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--light-black2);
+    margin-bottom: 25px;
+}
+.service-info{
+    padding: 30px 42px 30px 30px;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    margin-bottom: 20px; 
+}
+.service-info h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--black); 
+    margin-bottom: 10px;   
+}
+.service-info p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    margin: 0;
+    color: var(--light-black2);
+}
+
+.service-img{
+    width: 52%; 
+}
+.service-img .ser-img{
+    width: 100%;
+    height: 910px;
+    object-fit: cover;
+}
+.button{
+    position: relative;
+    top: -8%;
+    left: -10%;
+    width: 220px;
+    text-align: center;
+    background: var(--orange-light);
+    border-radius: 8px;
+    padding: 34px 0;
+}
+.button h1{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: #FFF;
+}
+.button p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
 }
 
 /*=========================
@@ -286,4 +369,210 @@ footer .container p{
     line-height: 23px;
     color: var(--light-black);
     padding: 25px 0;
+}
+
+@media (min-width: 320px) and (max-width: 576px){
+
+/* header section start */
+header{
+
+}
+header .container {
+    flex-direction: column;
+}
+header .container .logo {
+    font-size: 34px;
+}
+ul {
+    text-align: center;
+}
+.menu ul li {
+    display: block;
+    margin: 18px 0;
+}
+/* Banner section start */
+.banner-section{
+    padding: 50px 15px;
+}
+.banner-details {
+    width: 100%;
+}
+.banner-details h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+.banner-details p {
+    margin-top: 20px;
+}
+.banner-details .btn-primary {
+    font-size: 16px;
+}
+.banner-img {
+    margin-top: 50px;
+}
+
+/* Feature section start */
+.feature-section{
+    padding: 85px 15px;
+}
+.feature-section .container {
+    flex-direction: column-reverse;
+}
+.feature-details{
+    width: 100%;
+    text-align: center;
+}
+.feature-details h2 {
+    font-size: 35px;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+.feature-details p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.feature-details .btn-primary2 {
+    font-size: 16px;
+}
+.feature-image {
+    width: 100%;
+}
+
+/* Service section start */
+.service-section{
+    padding: 0px 15px 50px;
+}
+.service-section .container {
+    gap: 30px;
+    flex-direction: column;
+}
+.service-details {
+    width: 100%;
+}
+.service-details h1 {
+    font-size: 32px;
+    line-height: 40px;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+.service-details p {
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+.service-info {
+    padding: 18px;
+    margin-bottom: 30px;
+}
+.service-info h3 {
+    font-size: 22px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.service-info p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0;
+}
+.service-img {
+    width: 100%;
+}
+.service-img .ser-img {
+    width: 100%;
+}
+.button {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 20px;
+}
+.button h1 {
+    font-size: 30px;
+}
+.button p {
+    font-size: 14px;
+}
+
+/* Client section start */
+.client-section {
+    padding: 25px 15px 50px;
+}
+.client-details {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.client-details h2 {
+    font-size: 36px;
+    text-align: center;
+    line-height: 53px;
+    margin-bottom: 4px;
+}
+.client-details p {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.client-info {
+    width: 100%;
+    gap: 35px;
+    flex-direction: column;
+}
+.client-info .working-info {
+    padding: 58px 60px;
+}
+.client-info .working-info .icons {
+    width: 40%;
+}
+.client-info .working-info h3 {
+    font-size: 45px;
+    line-height: 59px;
+}
+.client-info .working-info p {
+    font-size: 19px;
+}
+
+/* Logo section start */
+.logo-section{
+    padding: 20px 15px 45px
+}
+.logo-section .logo-heading {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+.logo-section .logo-heading h2 {
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+.logo-section .logo-heading p {
+    font-size: 16px;
+    line-height: 25px;
+}
+.logo-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 12px;
+}
+.logo-img .single-logo img {
+    width: 84%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer section start */
+footer {
+    padding: 30px 15px;
+    background: #FFF4E7;
+}
+footer .container p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+}
+
 }
