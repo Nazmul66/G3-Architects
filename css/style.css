@@ -29,8 +29,14 @@ a{
     Header section start
 ==========================*/
 header{
-    background-color: var(--header-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #eae8dc;
     padding: 20px 0;
+    z-index: 20;
+    box-shadow: 0 6px 18px rgb(0 0 0 / 20%);
 }
 header .container{
     max-width: 1140px;
@@ -57,12 +63,15 @@ header .container .logo{
     font-size: 16px;
     color: var(--light-black);
 }
+.nav{
+    display: none;
+}
 
 /*=========================
     Banner section start
 ==========================*/
 .banner-section{
-   padding: 50px 0;
+   padding: 120px 0 50px;
    background-color: var(--header-bg);
 }
 .banner-section .container{
@@ -474,8 +483,9 @@ footer .container p{
 @media (min-width: 320px) and (max-width: 576px){
 
 /* header section start */
-header .container {
-    flex-direction: column;
+
+header {
+ padding: 20px 15px;
 }
 header .container .logo {
     font-size: 34px;
@@ -483,13 +493,40 @@ header .container .logo {
 ul {
     text-align: center;
 }
+.menu {
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eae8dc;
+    z-index: 30;
+    box-shadow: -8px 2px 29px rgb(0 0 0 / 50%);
+    transition: all 0.3s ease-in-out;
+}
+.menu.active{
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
 .menu ul li {
     display: block;
-    margin: 18px 0;
+    margin: 38px 0;
 }
+.menu ul li a {
+    font-weight: 600;
+}
+.nav{
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
 /* Banner section start */
 .banner-section{
-    padding: 50px 15px;
+    padding: 120px 15px 50px;
 }
 .banner-details {
     width: 100%;
@@ -536,6 +573,8 @@ ul {
 }
 .feature-image {
     width: 100%;
+    gap: 12px;
+    margin-top: 30px;
 }
 
 /* Service section start */
@@ -672,15 +711,6 @@ ul {
     width: 100%;
 }
   
-
-
-
-
-
-
-
-
-
 /* Logo section start */
 .logo-section{
     padding: 20px 15px 45px
